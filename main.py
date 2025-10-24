@@ -15,14 +15,14 @@ API_KEY = "KNOXRAHUL"
 API_URL = "https://numtoinfobyekam.ct.ws/api/num.php"
 
 # --- Read Bot Token from Environment Variables ---
-# This is the SAFE way to get your token on Render.
+# This is the SAFE way to get your token on Railway.
 # os.environ.get('BOT_TOKEN') reads the 'BOT_TOKEN' variable you will set
-# in the Render dashboard.
+# in the Railway dashboard.
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
 if not BOT_TOKEN:
     logger.critical("!!! ERROR: BOT_TOKEN environment variable is not set. !!!")
-    logger.critical("Please add it in the 'Environment' tab on Render.")
+    logger.critical("Please add it in the 'Variables' tab on Railway.")
     exit()
 
 # Create the bot
